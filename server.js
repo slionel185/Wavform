@@ -11,7 +11,7 @@ const methodOverride = require('method-override')
 const path = require('path')
 
 const mongoInit = require('./js/mongoose-config')
-mongoInit('mongodb+srv://Seth:BuckyBalls11@g-cluster0-oge6a.mongodb.net/wavform?retryWrites=true&w=majority')
+mongoInit()
 
 const initializePassport = require('./js/passport-config')
 initializePassport(passport)
