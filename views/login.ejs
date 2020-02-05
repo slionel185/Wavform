@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('partials/header') %>
+        <title>Wavform - Login</title>
+    </head>
+
+    <body>
+        <div class="main">
+            <div class="header">
+                <div></div>
+                <div class="headerTitle">
+                    <div class="title" data-text="wavform">
+                        wavform
+                    </div>
+                </div>
+            </div>
+            <div class="body">
+                <div class="loginForm">
+                    <form action="/login" method="POST">
+                        <div class="formTitle">
+                            Login
+                        </div>
+                        <hr>
+                        <div class="usernameForm">
+                            <label for="username">Username</label>
+                            <input type="text" id="username" name="username" autocomplete="off">
+                        </div>
+                        <div class="passwordForm">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" autocomplete="off">
+                        </div>
+                        <div class="registerText">
+                            <p class="pText">Don't have an account? <a class="link" href="/register">Register here!</a></p>
+                        </div>
+                        <div class="btnForm">
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="footer">
+                <p class="footerText">Copyright &copy; 2020 Wavform Inc. All rights reserved.</p>
+            </div>
+        </div>
+        <%- include('partials/scripts') %>
+    </body>
+</html>

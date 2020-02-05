@@ -1,0 +1,145 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+.main {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 10% 1fr 4%;
+    background-color: #455A64;
+}
+
+.header {
+    color: #DEE3E6;
+    background-color: #263238;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    display: grid;
+    grid-template-columns: 10vw 1fr 10vw;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.25);
+}
+
+.headerLeft, .headerTitle, .body {
+    position: relative;
+}
+
+.menuBtn, .title, .loginForm {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title {
+    font-size: 72px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 200;
+    letter-spacing: 1rem;
+    background-image: -webkit-linear-gradient(325deg, rgba(0,188,208,1) 0%, rgba(255,51,112,1) 100%);
+    background-clip: text;
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.17);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.footer {
+    background-color: #263238;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    position: relative;
+}
+
+.footerText {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 17px;
+    color: #DEE3E6;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.link {
+    text-decoration: none;
+    color: #263238;
+}
+
+.registerText {
+    color: #DEE3E6;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+}
+
+.pText {
+    margin: 10px;
+    margin-bottom: 25px;
+}
+
+.loginForm {
+    position: relative;
+    background-color: #546E7A;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.17);
+    border-radius: 25px;
+    width: 450px;
+    padding: 20px;
+}
+
+label {
+    color: #DEE3E6;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    padding-left: 15px;
+}
+
+input {
+    display: block;
+    width: 100%;
+    background-color: #455A64;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: 2px solid #263238;
+    box-sizing: border-box;
+    border-radius: 33px;
+    color: #DEE3E6;
+}
+
+hr {
+    width: 75%;
+    color: #263238;
+}
+
+.formTitle {
+    text-transform: uppercase;
+    font-size: 48px;
+    color: #DEE3E6;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.btnForm {
+    text-align: center;
+}
+
+button {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 24px;
+    padding: 7px 15px;
+    border: 2px solid  #DEE3E6;
+    color: #DEE3E6;
+    background-color: #263238;
+    border-radius: 25px;
+    transition: .5s;
+}
+
+button:hover {
+    color: #263238;
+    background-color: #DEE3E6;
+    transition: .5s;
+}
