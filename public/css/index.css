@@ -25,7 +25,7 @@ html, body {
     position: relative;
 }
 
-.menuBtn, .title, .loginForm {
+.menuBtn, .title, .loginForm, .welcomePage {
     position: absolute;
     margin: 0;
     top: 50%;
@@ -142,4 +142,26 @@ button:hover {
     color: #263238;
     background-color: #DEE3E6;
     transition: .5s;
+}
+
+.welcomeText {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: #DEE3E6;
+    font-size: 48px;
+    margin: 0;
+}
+
+.welcomePara {
+    color: #263238;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 28px;
+}
+
+.welcomePage {
+    background-color: #546E7A;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.17);
+    width: 450px;
+    padding: 20px;
+    border-radius: 25px;
+    text-align: center;
 }

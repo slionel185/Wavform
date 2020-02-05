@@ -11,7 +11,7 @@ const methodOverride = require('method-override')
 const path = require('path')
 
 const mongoInit = require('./js/mongoose-config')
-mongoInit(process.env.MONGO_URI)
+mongoInit()
 
 const initializePassport = require('./js/passport-config')
 initializePassport(passport)
@@ -27,7 +27,7 @@ app.use(express.static(path.join(__dirname, '/public')))
 app.use(express.urlencoded({ extended: false }))
 app.use(flash())
 app.use(session({
-    secret: process.env.SESSION_SECRET,
+    secret: 'etkgABarC55LNzDLOSqvHOWHK9tkeNZHb0OpPtCFTeGNYMtBhxzFrplNwNDkr21HUwn4nHXlvmToaKXX',
     resave: false,
     saveUninitialized: false
 }))

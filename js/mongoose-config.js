@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
-const mongoInit = (MONGO_URI) => {
-    mongoose.connect(MONGO_URI, {
+const mongoInit = () => {
+    mongoose.connect('mongodb+srv://Seth:BuckyBalls11@g-cluster0-oge6a.mongodb.net/wavform?retryWrites=true&w=majority', {
         useCreateIndex: true,
         useFindAndModify: true,
         useNewUrlParser: true,

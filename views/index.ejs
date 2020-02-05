@@ -1,4 +1,39 @@
-<h1>Hi <%= user.username %></h1>
-<form action="/logout?_method=DELETE" method="POST">
-    <button type="submit">Logout</button>
-</form>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <%- include('partials/header') %>
+        <title>Wavform</title>
+    </head>
+
+    <% const usernameCap = user.username.charAt(0).toUpperCase() + user.username.slice(1) %> 
+
+    <body>
+        <div class="main">
+            <div class="header">
+                <div></div>
+                <div class="headerTitle">
+                    <div class="title" data-text="wavform">
+                        wavform
+                    </div>
+                </div>
+            </div>
+            <div class="body">
+                <div class="welcomePage">
+                    <h1 class="welcomeText">Welcome <%= usernameCap %></h1>
+                    <hr>
+                    <h2 class="welcomePara">Wavform is still in development. We will update you soon.</h2>
+                </div>
+            </div>
+            <div class="footer">
+                <p class="footerText">Copyright &copy; 2020 Wavform Inc. All rights reserved.</p>
+            </div>
+        </div>
+        <%- include('partials/scripts') %>
+    </body>
+</html> 
+<!--
+        <form action="/logout?_method=DELETE" method="POST">
+            <button type="submit">Logout</button>
+        </form>
+
+-->
