@@ -1,0 +1,13 @@
+<form action="/post" method="POST">
+    <label>Message</label>
+    <input type="text" id="content" name="content">
+    <input type="submit" value="Submit">
+</form>
+
+<% if(posts !== null) { %>
+    <% for(let i = 0; i < posts.length; i++) { %>
+        <p><%= posts[i].content %></p>
+    <% } %>
+<% } else { %>
+    <% console.log('Posts is empty') %>
+<% } %>

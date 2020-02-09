@@ -19,7 +19,10 @@ const userSchema = new Schema({
     verified: {
         type: Boolean,
         default: false
-    }
+    },
+    following: [{ type: Schema.Types.ObjectId, ref: 'User' }],
+    followers: [{ type: Schema.Types.ObjectId, ref: 'User' }],
+    posts: [{ type: Schema.Types.ObjectId, ref: 'Post' }]
 }, {
     timestamps: true
 })
