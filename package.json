@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "dev": "nodemon . -e ejs,json,js,css"
+    "dev": "nodemon . -e ejs,json,js,css,svg"
   },
   "author": "Seth Torrence",
   "license": "SEE LICENSE IN ROOT",
