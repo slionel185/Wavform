@@ -42,7 +42,7 @@ router.post('/new', (req, res) => {
         weaponImg: req.body.weaponImg
     }).save((err, weapon) => {
         if(err) throw err
-        res.redirect('/')
+        res.send(`${weapon.name} was created successfully. Please reopen the program to add a new gun.`)
     })
 })
 
