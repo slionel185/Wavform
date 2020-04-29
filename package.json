@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "concurrently \"cd api && npm start\" \"cd bot && npm start\"",
+    "start": "concurrently \"cd api && npm i && npm start\" \"cd bot && npm i && npm start\"",
     "dev": "nodemon . -e ejs,json,js,css,svg"
   },
   "author": "Seth Torrence",
