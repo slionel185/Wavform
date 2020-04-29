@@ -7,7 +7,7 @@ router.post('/new', (req, res) => {
     
 })
 
-router.get('/:name', (req, res) => {
+router.get('/v1/:name', (req, res) => {
     const toTitleCase = phrase => {
         return phrase.toLowerCase().split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ')
     }
